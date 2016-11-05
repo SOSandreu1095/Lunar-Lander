@@ -1,46 +1,50 @@
 body {
-	background-color: black;
+	background: rgba(0,32,68,1);
+background: -moz-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,32,68,1)), color-stop(35%, rgba(0,22,46,1)), color-stop(81%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002044', endColorstr='#000000', GradientType=0 );
 }
 
-#mainBlock{
-	width: 100%;
-	height: 100%;
-}
 
 #n1 {
 	background-color: red;
-	float: left;
 	width: 25%;
 	height: 500px;
-	position: relative;
 }
 
 #n2 {
 	background-color: green;
-	float: left;
 	width: 50%;
 	height: 500px;
 }
 
 #n3 {
 	background-color: yellow;
-	display: inline-block;
 	width: 25%;
 	height: 500px;
 }
 
 #n1,#n2,#n3 {
+	display: inline-block;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 
 #n2 img{
 	height: 60%;
+	min-width: 40%;
+	max-width: 90%;
 	padding-top: 5px;
 	/*Para centrar una imagen*/
 	display: block;
 	margin: auto;
+	position: relative;
 }
 
 #n1 ul {
@@ -49,19 +53,40 @@ body {
 	margin: 0;
 }
 
-#cp{
-	/*Para centar la imagen verticalmete*/
-    position: absolute;               
-    top: 30%;                        
+.cp {
+	margin: auto;
+	margin-top: 10%;
+	width: 80%;
+	height: 80%;
+	border-style: solid;
+}
+
+.speed, .fuel, .height {
+	border-style: solid;
+	border-color: white;
+	height: 25%;
+	margin-bottom: 15%
+
 }
 
 #n1 .controlPane {
-	width: 80%;
-	display: block;
-	margin: auto;
-	padding-top: 10%; 
+	width: 100%;
 }
 
+
+.gameOptions ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gameOptions ul li {
+	display: inline-block;
+}
+
+.gameOptions ul li img {
+	width: 33%;
+}
 
 
 #ground img{
