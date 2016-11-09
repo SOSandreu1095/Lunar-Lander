@@ -1,6 +1,11 @@
+* { /*Para quitar los margenes que deja por defecto*/
+	padding: 0;
+	margin: 0;
+}
+
 html {
-	padding: 0%;
-	margin: 0%;
+	padding: 0;
+	margin: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -15,38 +20,40 @@ body{
 	background: linear-gradient(to bottom, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002044', endColorstr='#000000', GradientType=0 );
 }
+
 .wrapper {
-	background: grey;
 	position: absolute;
 	width: 100%;
 	height: 75%;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 .n1 {
-	background-color: red;
 	width: 25%;
 	height: 100%;
+	background: red;
 }
 
 .n2 {
-	background-color: green;
+	
 	width: 50%;
 	height: 100%;
 }
 
 .n3 {
-	background-color: yellow;
+	background: blue;
 	width: 25%;
 	height: 100%;
 }
 
 .n1, .n2, .n3 {
 	float: left;
+	position: relative;
 }
 
 .controlPane { /*Falta centrar verticalmente*/
-	background-color: white;
+	/*Position fixed, top 5%*/
+	background: green;
 	display: block;
 	margin: auto;
 	width: 80%;
@@ -54,19 +61,18 @@ body{
 }
 
 .speedDiv {
-	background: hotpink;
+
 	width: 100%;
 	height: 33.33%;
 }
 
 .fuelDiv {
-	background: purple;
 	width: 100%;
 	height: 33.33%;
 }
 
 .heightDiv {
-	background: deepskyblue;
+
 	width: 100%;
 	height: 33.33%;
 }
@@ -77,51 +83,55 @@ body{
 }
 
 #rocket {
-	height: 60%;
+	height: 20%;
 	display: block;
 	margin: auto;
-	padding-top: 2%;
-	max-width: 80%;
+	padding-top: 5%;
 }
 
-
-.speed, .fuel, .height {
+#speed, #fuel, #height {
 	border-style: solid;
-	border-color: white;
 	height: 25%;
 	margin-bottom: 15%
 
 }
 
 .gameOptions {
+	background: yellow;
+	width: 80%;
 	height: 50%;
-	background: grey;
-	overflow: hidden;
+	margin: auto;
+	text-align: center;
 }
 
 .gameOptions img {
-	margin-top: 5%;
-	float: left;
-	width: 15%;
+	width: 20%;
 }
 
 .pause {
-	margin-left: 10%;
-	margin-right: 20%;
-}
-.restart {
-	margin-right: 20%;
+	float: left;
 }
 
-.prop img{
-	width: 60%;
-	/*Centrar Horiz.*/
+.help {
+	float: right;
+}
+
+.propulsion {
+	background: hotpink;
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.propulsion img {
 	display: block;
 	margin: auto;
+	height: 90%; 
+	max-width: 100%;
+	
 }
 
 .ground {
-	background-color: darkslategrey; 
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -132,5 +142,4 @@ body{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	bottom: 0px;
 }
