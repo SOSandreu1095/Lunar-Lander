@@ -104,17 +104,9 @@ body{
 	text-align: center;
 }
 
-.pause {
+.gameOptions a img{
 	float: left;
-}
-
-.help {
-	float: right;
-}
-
-.pause, .restart, .help {
-	width: 25%;
-	padding-top: 5%;
+	width: 33%;
 }
 
 .propulsion {
