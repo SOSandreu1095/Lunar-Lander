@@ -1,0 +1,230 @@
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Digital Play St.ttf");
+}
+
+body,html{
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+
+body{
+	background: rgba(0,32,68,1);
+	background: -moz-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,32,68,1)), color-stop(35%, rgba(0,22,46,1)), color-stop(81%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002044', endColorstr='#000000', GradientType=0 );
+}
+
+/*MAIN DIVS COLOCATION*/
+.a {
+    float: left;
+	width: 250px;
+	height: 450px;
+}
+
+/*CONTAINS B & C AND IS RESIZABLE*/
+.wrapper {
+    float:right;
+	width: calc(100% - 250px);
+	height: 75%;
+}
+
+.b {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.c {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+
+/*GROUND*/
+.d {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+}
+
+.d img {
+    width: 100%;
+    height: 100%;
+}
+
+/*ROCKET*/
+.rocket {
+    width: 100%;
+    height: 18%;
+}
+
+.rocket img {
+    padding-top: 5%;
+    height: 100%; /*To adjust the fire to the tocket*/
+	display: block;
+	margin: auto;
+}
+
+.fire {
+    width: 100%;
+    height: 3%;
+}
+
+.fire img {
+    height: 100%;
+	display: block;
+	margin: auto;
+}
+
+/*LISTS*/
+ul {
+    list-style: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.cp li {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#speed, #fuel, #height {
+	width: 90%;
+    line-height: 500%;
+	background-size: 100% 100%;
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.cp li p {
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 43%;
+}
+
+#speed {
+	background-image: url("../img/speed.png");
+}
+
+#fuel {
+	background-image: url("../img/fuel.png");
+}
+
+#height {
+	background-image: url("../img/height.png");
+}
+
+
+.options li {
+	text-align: center;
+	float: left;
+    width: 33.33%;
+}
+
+.options img {
+    width: 60%;
+    padding: 15%;
+}
+
+.pro {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    width: 70%;
+}
+
+/*INSTRUCTIONS*/
+.instructions {
+	border-style: solid;
+	border-color: lawngreen;
+	font-family: myFont;
+    position: absolute;
+    display: block;
+    background: slategrey;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+	opacity: 0.9;
+    display: none;
+}
+
+.idiom {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.idiom li {
+	background: green;
+	text-align: center;
+	float: left;
+	width: 33.33%;
+}
+
+li a {
+	font-size: 0.7em;
+	display: block;
+	padding: 5%;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+.active {
+	background: limegreen;
+}
+
+.idiom a:not(.active){
+	opacity: 0.5;
+}
+
+.idiom a:hover:not(.active){
+	background: yellow;
+}
+
+p {
+	padding: 5%;
+	font-size: 0.7em;
+}
+
+.game {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.game ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.game li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.game a {
+	background: forestgreen;
+}
+
+.game a:hover {
+	background: limegreen;
+}
