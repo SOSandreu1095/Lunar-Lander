@@ -2,44 +2,82 @@
 <html>
 
 <head>
-	<title>Lunar Lander</title>
-	<link rel="stylesheet" type="text/css" href="css/styleH.css">
+    <title>Lunar Lander</title>
+    <link rel="stylesheet" type="text/css" href="css/styleH.css">
 </head>
 
 <body>
-	<div class="wrapper">
-		<div class="fixed">
-			<div class="speed">
-				<p>45 km/h</p>
-			</div>
-			<div class="fuel">
-				<p>80 %</p>
-			</div>
-			<div class="height">
-				<p>80 mts</p>
-			</div>
-		</div>
+    <div class="a">
+        <ul class="cp">
+            <li id="speed">
+                <p><span>100</span> km/h</p>
+            </li>
+            <li id="fuel">
+                <p><span>83</span> %</p>
+            </li>
+            <li id="height">
+                <p><span>140</span> mts</p>
+            </li>
+        </ul>
+    </div>
 
-		<div class="responsive">
-			<div class="rocket">
-				<img src="img/rocket.png">
-			</div>
+    <div class="wrapper">
+        <div class="b">
+            <div class="rocket">
+                <div id="rocket">
+                    <img src="img/rocket.png">
+                </div>
+                <div id="fire">
+                    <img src="img/fire.png">
+                </div>
+            </div>
+        </div>
+        <div class="c">
+            <ul class="options">
+                <li>
+                    <a href="#"><img src="img/pause.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/restart.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/help.png"></a>
+                </li>
+            </ul>
+            <div class="pro">
+                <img src="img/pro.png">
+            </div>
+        </div>
+    </div>
 
-			<div class="interactive">
-				<div class="gameOptions">
-					<img class="pause" src="img/pause.png">
-					<img class="restart" src="img/restart.png">
-					<img class="help" src="img/help.png">
-				</div>
+    <div class="d">
+        <img src="img/ground.png"></a>
+    </div>
 
-				<div class="propulsion">
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="instructions">
+        <ul class="idiom">
+            <li><a href="#">ESPAÑOL</a></li>
+            <li><a href="#">CATALÀ</a></li>
+            <li><a class="active" href="#">ENGLISH</a></li>
+        </ul>
+        <p>
+            HOW TO PLAY?
+            <br><br> The objective is to land the rocket in a suitable speed, avoiding the crash
+            <br><br> WARNING: The rocket's fuel is limited
+            <br><br><br><br> CONTROLS
+            <br><br> Press the propulsion button or use the space to activate it
+        </p>
 
-	<div class="ground">
-	</div>
+        <div class="game">
+            <ul>
+                <li><a href="indexH.html">HORIZONTAL</a></li>
+                <li><a href="indexV.html">VERTICAL</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
 
 </body>
 

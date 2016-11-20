@@ -1,16 +1,15 @@
-* {
-	margin: 0;
-	padding: 0;
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Digital Play St.ttf");
 }
 
-html {
-	width: 100%;
-	height: 100%;
+body,html{
+    height:100%;
+    padding:0px;
+    margin:0px;
 }
 
 body{
-	width: 100%;
-	height: 100%;
 	background: rgba(0,32,68,1);
 	background: -moz-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,32,68,1)), color-stop(35%, rgba(0,22,46,1)), color-stop(81%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
@@ -21,118 +20,221 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002044', endColorstr='#000000', GradientType=0 );
 }
 
-.wrapper {
-	position: absolute;
-	width: 100%;
-	height: 75%;
-	opacity: 0.7;
-}
-
-.fixed {
+/*MAIN DIVS COLOCATION*/
+.a {
+    float: left;
 	width: 250px;
-	height: 400px;
+	height: 450px;
 }
 
-.speed {
-	background-image: url("../img/speed.png");
+/*CONTAINS B & C AND IS RESIZABLE*/
+.wrapper {
+    float:right;
+	width: calc(100% - 250px);
+	height: 75%;
 }
 
-.fuel {
-	background-image: url("../img/fuel.png");
+.b {
+	padding-top: 2%;
+    float: left;
+    width: 70%;
+    height: 100%;
 }
 
-.height {
-	background-image: url("../img/height.png");
+.c {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: right;
 }
 
-.speed, .fuel, .height {
+/*GROUND*/
+.d {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+}
+
+.d img {
+    width: 100%;
+    height: 100%;
+}
+
+/*ROCKET*/
+.rocket {
+    width: 100%;
+    height: 20%;
+}
+
+#rocket {
+	width: 100%;
+	height: 85%;
+}
+
+#rocket img {
+    height: 100%; /*To adjust the fire to the tocket*/
+	display: block;
+	margin: auto;
+}
+
+#fire {
+    width: 100%;
+    height: 15%;
+}
+
+#fire img {
+    height: 100%;
+	display: block;
+	margin: auto;
+}
+
+/*LISTS*/
+ul {
+    list-style: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.cp li {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#speed, #fuel, #height {
 	width: 90%;
-	height: 23%;
+    line-height: 500%;
 	background-size: 100% 100%;
 	display: block;
 	margin: auto;
 	margin-top: 5%;
 }
 
-.fixed p {
-	font-size: 20px;
-	font-weight: bold;
-	padding-top: 15%;
-	padding-left: 50%;
+.cp li p {
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 43%;
+}
+
+#speed {
+	background-image: url("../img/speed.png");
+}
+
+#fuel {
+	background-image: url("../img/fuel.png");
+}
+
+#height {
+	background-image: url("../img/height.png");
 }
 
 
-
-.responsive {
-	/*background: plum;*/
-	width: calc(100% - 250px);
-	height: 100%;
-}
-
-.fixed, .responsive{
+.options li {
+	text-align: center;
 	float: left;
-	position: relative;
+    width: 33.33%;
 }
 
-
-.rocket {
-	width: 70%;
-	/*background: darkorange;*/
+.options img {
+    width: 60%;
+    padding: 15%;
 }
 
-.rocket img {
-	height: 20%;
-	display: block;
-	margin: auto;
-	margin-top: 3%;
-}
-
-.interactive {
-	width: 30%;
-	/*background: yellowgreen;*/
-}
-
-.rocket, .interactive {
-	float: left;
-	height: 100%;
-}
-
-.gameOptions {
-	/*background: yellow;*/
+.pro {
 	width: 100%;
-	height: 30%;
+	height: 100%;
+}
+
+.pro img {
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 80%;
+}
+
+/*INSTRUCTIONS*/
+.instructions {
+	border-style: solid;
+	border-color: lawngreen;
+	font-family: myFont;
+    position: absolute;
+    display: block;
+    background: slategrey;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+	opacity: 0.9;
+	display: none;
+}
+
+.idiom {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.idiom li {
+	background: green;
+	text-align: center;
+	float: left;
+	width: 33.33%;
+}
+
+.instructions li a {
+	font-size: 0.7em;
+	display: block;
+	padding: 5%;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+.active {
+	background: limegreen;
+}
+
+.idiom a:not(.active){
+	opacity: 0.5;
+}
+
+.idiom a:hover:not(.active){
+	background: yellow;
+}
+
+.instructions p {
+	padding: 5%;
+	font-size: 0.7em;
+}
+
+.game {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.game ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.game li {
+	width: 50%;
+	float: left;
 	text-align: center;
 }
 
-.pause {
-	float: left;
+.game a {
+	background: forestgreen;
 }
 
-.help {
-	float: right;
-}
-
-.pause, .restart, .help {
-	width: 25%;
-	padding-top: 5%;
-}
-
-.propulsion {
-	width: 100%;
-	height: 70%;
-	position: relative;
-	background: url("../img/pro.png") no-repeat; 
-	background-position: 50% 50%;
-	background-size: 70% auto;
-}
-
-
-.ground {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 25%;
-    background-image: url("../img/ground.png");
-    background-repeat: none;
-    background-size: 100% 100%;
+.game a:hover {
+	background: limegreen;
 }
