@@ -68,7 +68,6 @@ body{
 }
 
 #rocket {
-
 	width: 100%;
 	height: 85%;
 }
@@ -115,7 +114,7 @@ ul {
 .cp li p {
     font-family: myFont;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-left: 43%;
 }
 
@@ -144,10 +143,15 @@ ul {
 }
 
 .pro {
-    position: absolute;
-    bottom: 5%;
-    left: 15%;
-    width: 70%;
+	width: 100%;
+	height: 100%;
+}
+
+.pro img {
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 80%;
 }
 
 /*INSTRUCTIONS*/
@@ -163,7 +167,7 @@ ul {
     width: 80%;
     height: 80%;
 	opacity: 0.9;
-    display: none;
+	display: none;
 }
 
 .idiom {
@@ -180,7 +184,7 @@ ul {
 	width: 33.33%;
 }
 
-.idiom li a {
+.instructions li a {
 	font-size: 0.7em;
 	display: block;
 	padding: 5%;
@@ -203,7 +207,7 @@ a {
 	background: yellow;
 }
 
-p {
+.instructions p {
 	padding: 5%;
 	font-size: 0.7em;
 }
