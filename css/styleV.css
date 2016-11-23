@@ -71,6 +71,7 @@ body{
 #fire {
 	width: 100%;
 	height: 15%;
+	display: none;
 }
 
 .pro {
@@ -115,7 +116,7 @@ body{
 .cp li p {
 	font-family: myFont;
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 0.52em;
     margin-left: 43%;
 }
 .cp #speed {
@@ -156,8 +157,9 @@ body{
     left: 10%;
     width: 80%;
     height: 80%;
-	opacity: 0.9;
+	opacity: 0.95;
 	z-index: 5;
+	display: none;
 }
 
 .idiom {

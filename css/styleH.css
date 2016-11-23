@@ -87,6 +87,7 @@ body{
     height: 100%;
 	display: block;
 	margin: auto;
+	display: none;
 }
 
 /*LISTS*/
@@ -166,8 +167,8 @@ ul {
     left: 10%;
     width: 80%;
     height: 80%;
-	opacity: 0.9;
-	display: none;
+	opacity: 0.95;
+	/*display: none;*/
 }
 
 .idiom {
@@ -214,25 +215,20 @@ a {
 
 .game {
 	position: absolute;
-	width: 100%;
-	bottom: 0;
-}
-
-.game ul {
-	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden;
-}
-
-.game li {
-	width: 50%;
-	float: left;
+	bottom: 0;
+	width: 100%;
 	text-align: center;
 }
 
 .game a {
-	background: forestgreen;
+	padding: 1.6em;
+	font-size: 0.7em;
+	display: block;
+	width: 100%;
+	background: green;
 }
 
 .game a:hover {
