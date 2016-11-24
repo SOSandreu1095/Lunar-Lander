@@ -159,7 +159,7 @@ body{
     height: 80%;
 	opacity: 0.95;
 	z-index: 5;
-	/*display: none;*/
+	display: none;
 }
 
 p span {

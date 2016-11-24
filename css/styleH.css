@@ -168,7 +168,7 @@ ul {
     width: 80%;
     height: 80%;
 	opacity: 0.95;
-	/*display: none;*/
+	display: none;
 }
 
 p span {
