@@ -47,10 +47,10 @@ HELP
     Pulsar una de los opciones modificará el idioma en el que las instrucciones son visualizadas.
   * Botón de About
   
-  ABOUT
-  -----
-    * Página distinta al juego donde se informa sobre la creación y desarrollo del juego, básicamente haciendo
+ABOUT
+-----
+  * Página distinta al juego donde se informa sobre la creación y desarrollo del juego, básicamente haciendo
     referencia a aquellas personas involucradas en el juego.
-    * Sigue habiendo el selector de idioma como el de las instrucciones.
-    * Contiene link que redirecciona al git del proyecto.
-    * Botón de regresar al juego.
+  * Sigue habiendo el selector de idioma como el de las instrucciones.
+  * Contiene link que redirecciona al git del proyecto.
+  * Botón de regresar al juego.
