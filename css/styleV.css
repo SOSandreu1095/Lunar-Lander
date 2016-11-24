@@ -159,7 +159,11 @@ body{
     height: 80%;
 	opacity: 0.95;
 	z-index: 5;
-	display: none;
+	/*display: none;*/
+}
+
+p span {
+	font-weight: bold;
 }
 
 .idiom {
@@ -206,25 +210,20 @@ a {
 
 .game {
 	position: absolute;
-	width: 100%;
-	bottom: 0;
-}
-
-.game ul {
-	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden;
-}
-
-.game li {
-	width: 50%;
-	float: left;
+	bottom: 0;
+	width: 100%;
 	text-align: center;
 }
 
 .game a {
-	background: forestgreen;
+	padding: 1.6em;
+	font-size: 0.7em;
+	display: block;
+	width: 100%;
+	background: green;
 }
 
 .game a:hover {
