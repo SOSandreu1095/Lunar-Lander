@@ -49,8 +49,8 @@ HELP
   
   ABOUT
   -----
-    * Página distinta al juego donde se informa sobre la creación y desarrollo del juego, básicamente haciendo referencia a aquellas
-    personas involucradas en el juego.
+    * Página distinta al juego donde se informa sobre la creación y desarrollo del juego, básicamente haciendo
+    referencia a aquellas personas involucradas en el juego.
     * Sigue habiendo el selector de idioma como el de las instrucciones.
     * Contiene link que redirecciona al git del proyecto.
     * Botón de regresar al juego.
