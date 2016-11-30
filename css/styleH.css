@@ -67,28 +67,13 @@ body{
     height: 20%;
 }
 
-#rocket {
-	width: 100%;
-	height: 85%;
-}
 
-#rocket img {
+.rocket img {
     height: 100%; /*To adjust the fire to the tocket*/
 	display: block;
 	margin: auto;
 }
 
-#fire {
-    width: 100%;
-    height: 15%;
-}
-
-#fire img {
-    height: 100%;
-	display: block;
-	margin: auto;
-	display: none;
-}
 
 /*LISTS*/
 ul {
@@ -116,7 +101,7 @@ ul {
     font-family: myFont;
     font-weight: bold;
     font-size: 1.1em;
-    margin-left: 43%;
+    margin-left: 40%;
 }
 
 #speed {
@@ -168,73 +153,60 @@ ul {
     width: 80%;
     height: 80%;
 	opacity: 0.95;
+	z-index: 2;
 	display: none;
 }
 
-p span {
-	font-weight: bold;
-}
-
-.idiom {
+.listHead {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden;
 }
 
-.idiom li {
+.listHead li {
 	background: green;
 	text-align: center;
 	float: left;
 	width: 33.33%;
 }
 
-.instructions li a {
-	font-size: 0.7em;
+.listHead li a {
 	display: block;
-	padding: 5%;
+	padding: 3%;
+	text-decoration: none;
+	color: white;
 }
 
-a {
-	text-decoration: none;
-	color:white;
+.dropdownContent {
+	list-style: none;
+	display: none;
+	position: absolute;
+	width: 33.33%;
+	z-index: 3;
+}
+
+.dropdownContent li {
+	float: none;
+	text-align: center;
+	width: auto;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+}
+
+p {
+	z-index: 4;
+	font-size: 0.75em;
+	padding-left: 5%;
 }
 
 .active {
-	background: limegreen;
+	background: lawngreen;
 }
 
-.idiom a:not(.active){
-	opacity: 0.5;
-}
-
-.idiom a:hover:not(.active){
-	background: yellow;
-}
-
-.instructions p {
-	padding: 5%;
-	font-size: 0.7em;
-}
-
-.game {
-	position: absolute;
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-}
-
-.game a {
-	padding: 1.6em;
-	font-size: 0.7em;
-	display: block;
-	width: 100%;
-	background: green;
-}
-
-.game a:hover {
+.listHead a:hover:not(.active){
+	color: yellow;
 	background: limegreen;
 }
