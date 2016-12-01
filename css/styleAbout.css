@@ -2,44 +2,40 @@
     font-family: myFont;
     src: url("../fonts/Digital Play St.ttf");
 }
-
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
 html {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
-
 .ground {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	height: 25%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
     background-image: url("../img/ground.png");
     background-size: 100% 100%;
 }
-
-body{
-	width: 100%;
-	height: 100%;
-	background: rgba(0,32,68,1);
-	background: -moz-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,32,68,1)), color-stop(35%, rgba(0,22,46,1)), color-stop(81%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
-	background: -webkit-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
-	background: -o-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
-	background: -ms-linear-gradient(top, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
-	background: linear-gradient(to bottom, rgba(0,32,68,1) 0%, rgba(0,22,46,1) 35%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002044', endColorstr='#000000', GradientType=0 );
+body {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 32, 68, 1);
+    background: -moz-linear-gradient(top, rgba(0, 32, 68, 1) 0%, rgba(0, 22, 46, 1) 35%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 32, 68, 1)), color-stop(35%, rgba(0, 22, 46, 1)), color-stop(81%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 32, 68, 1) 0%, rgba(0, 22, 46, 1) 35%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 32, 68, 1) 0%, rgba(0, 22, 46, 1) 35%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 32, 68, 1) 0%, rgba(0, 22, 46, 1) 35%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 32, 68, 1) 0%, rgba(0, 22, 46, 1) 35%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#002044', endColorstr='#000000', GradientType=0);
 }
-
 /*INSTRUCTIONS*/
+
 .instructions {
-	border-style: solid;
-	border-color: lawngreen;
-	font-family: myFont;
+    border-style: solid;
+    border-color: lawngreen;
+    font-family: myFont;
     position: absolute;
     display: block;
     background: slategrey;
@@ -47,59 +43,50 @@ body{
     left: 10%;
     width: 80%;
     height: 80%;
-	opacity: 0.95;
+    opacity: 0.95;
 }
-
 .listHead {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
 }
-
 .listHead li {
-	background: green;
-	text-align: center;
-	float: left;
-	width: 50%;
+    background: green;
+    text-align: center;
+    float: left;
+    width: 50%;
 }
-
 .listHead li a {
-	display: block;
-	padding: 3%;
-	text-decoration: none;
-	color: white;
+    display: block;
+    padding: 3%;
+    text-decoration: none;
+    color: white;
 }
-
 .dropdownContent {
-	list-style-type: none;
-	display: none;
-	position: absolute;
-	width: 50%;
-	z-index: 1;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    width: 50%;
+    z-index: 1;
 }
-
 .dropdownContent li {
-	float: none;
-	text-align: center;
-	width: auto;
+    float: none;
+    text-align: center;
+    width: auto;
 }
-
 .dropdown:hover .dropdownContent {
-	display: block;
+    display: block;
 }
-
 p {
-	z-index: 4;
-	font-size: 0.75em;
-	padding-left: 5%;
+    z-index: 4;
+    font-size: 0.75em;
+    padding-left: 5%;
 }
-
 .active {
-	background: lawngreen;
+    background: lawngreen;
 }
-
-.listHead a:hover:not(.active){
-	color: yellow;
-	background: limegreen;
+.listHead a:hover:not(.active) {
+    color: yellow;
+    background: limegreen;
 }
