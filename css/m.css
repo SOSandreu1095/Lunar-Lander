@@ -1,9 +1,85 @@
-body,html{height:100%;padding:0px;margin:0px;}
-.a{background-color:#00bcd4;width:100%;height:90px;overflow:hidden;position:fixed;top:0px}
-.b{background-color:red;width:100%;height:100%;overflow:hidden;}
-.c{background-color:#cddc39;position:fixed;top:0px;bottom:0px;left:0px;right:0px;display:none;z-index:1}
-.d{background-color:pink;position:fixed;bottom:0px;height:10%;width:100%;}
-#nave{text-align:center;position:fixed;top:10%;width:100%;height:20%}
-#nave img{height:100%;}
-#cpanel{}
-#hidem,#showm{float:right}
+body,html{
+    height:100%;padding:0px;margin:0px;
+}
+
+body{
+    background: rgba(97,0,0,1);
+    background: -moz-linear-gradient(top, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(97,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#610000', endColorstr='#000000', GradientType=0 );
+}
+
+.a{
+    width:100%;
+    height:90px;
+    overflow:hidden;
+    position:fixed;
+    top:0px
+}
+.b{
+    background-color:red;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.c{
+    background-color:#cddc39;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    display:none;
+    z-index:1
+}
+
+.d {
+    height:12%;
+    width:100%;                     
+    position:fixed;
+    bottom:0px;
+}
+
+#ground {
+    width: 100%;
+    height: 100%;
+}
+
+#nave{
+    text-align:center;
+    position:fixed;
+    top:10%;
+    width:100%;
+    height:20%
+}
+
+#planeta{
+    position: fixed;
+    height: 60%;
+    left: 50%;
+    z-index: -10;
+}
+
+#nave img{
+    height:100%;
+}
+
+#showm img{
+    top: 2%;
+    width: 10%;
+    left: 87%;
+    position: fixed;
+    overflow: hidden;
+}
+
+#hidem img{
+    top: 2%;
+    width: 10%;
+    left: 87%;
+    position: fixed;
+    overflow: hidden;
+}

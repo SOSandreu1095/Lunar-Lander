@@ -1,66 +1,22 @@
-Lunar-Lander
-============
-Game project Lunar Lander
+# lunar-landing-javascript
+Versión esqueleto del juego Lunar Landing que incluye:
 
-IMPORTANTE
-----------
-El cliente (Cristian Montealegre), solicitó un degradado a modo de fondo, dicho degradado está
-realizado en la parte del css, sin embargo el validador no reconoce la sintaxis del degradado
-correctamente, y hay 4 líneas del degradado que provocan un error de verificación, sin embargo
-dichas líneas son necesarias para que el degradado sea correcto y funcional.
+* Html con los elementos básicos del juego
+* Css: d.css y m.css dos versiones que cargan mediante media query dependiendo del tamaño de pantalla (pruébalo!)
+* Js: con el javascript necesario para dejar caer la nave y parar cuando llega a un límite. Actualiza la velocidad y la altura en %/s y % (1% de pantalla = 1 metro).
+* No dispone de imágenes.
 
+Previsualización: https://rawgit.com/urbinapro/lunar-landing-javascript/master/index.html
 
-El diseño de estre proyecto corresponde a un compañero llamado Cristian Montealegre.
+Tareas a desarrollar:
+* Poner fondo, imagen de la nave y luna. Poner una tierra fijada a la pantalla para que se vea en cualquier tipo de dispositivo. Optimizar las imágenes. Recuerda que se pueden cargar diferentes tamaños y formas de fondos en función del dispositivo usando css.
+* Crear el menú: O bien creamos un menú 100% del espacio disponible (que para el móvil será el 100% de la pantalla) o ponemos un menú horizontal para la versión de escritorio y un menú 100% para el móvil.
+* Al pulsar una tecla o bien hacer click en la pantalla la nave debe cambiar de aspecto a *nave con motor encendido* y debe cambiar la aceleración de g a -g
+* Al pulsar una tecla o bien hacer click en la pantalla debe vaciarse el tanque de combustible de forma proporcional al tiempo que mantenemos pulsado el propulsor. Opcionalmente se pueden disponer de menores o mayores tanques de combustible para aumentar o disminuir la dificultad del juego.
+* Al tocar fondo debe mirarse si la velocidad de impacto es inferior a un valor umbral, en caso afirmativo mostrar mensaje de felicitación, en caso negativo explotar la nave. En ambos casos el juego finaliza y puede reiniciarse con la opción del menú *reiniciar*
+* Valores umbrales: 1m/s en modo difícil, 5m/s en modo muy fácil (los modos de dificultad son opcionalmente implementables)
+* Debe haber una página de *How to play* y una página de *About* accesibles desde el menú
 
+Cualquier otra funcionalidad o cambio debe quedar debidamente documentada.
 
-A partir del diseño que él quería realizar, se han realizado cambios para mejorar
-su jugabilidad, así como elementos adicionales y la fuente.
-
-Voy a distinguir el juego en 4 partes:
-
-HORIZONTAL (Versión Desktop)
-----------------------------
-
-  * Div del Control Panel ya no es redimensionable (responsive). Se ha cambiado a tamaños
-  fijos para una mayor legibilidad del panel en según que pantallas.
-
-  * Creado un div redimensionable que contiene los div n2 y n3.
-  
-  * El div original (n2) que contiene la nave, ha sido modificado:
-    * Hay un div que contiene la nave en el centro, dicho div tiene un 20% de altura del div n2
-    y una amplitud del 100%. La nave se encuentra con el fuego apagado, y se cambiará a la imagen
-    del fuego encendido cuando se active el propulsor.
-  
-  * Todos los otros elementos siguen la estructura original, puediendo variar mínimamente
-  las proporciones por razones de visibilidad y jugabilidad.
-
-VERTICAL (Versión Mobile)
--------------------------
-  * Se han aumentado un poco los tamaños de los botones así como su separación, para poder
-  pulsar en ellos con mayor facilidad en pantallas reducidas.
-
-  * El div original (n2) que contiene la nave, ha sido modificado:
-    * Hay un div que contiene la nave en el centro, dicho div tiene un 20% de altura del div n2
-    y una amplitud del 100%. La nave se encuentra con el fuego apagado, y se cambiará a la imagen
-    del fuego encendido cuando se active el propulsor.
-    
-INSTRUCTIONS
-------------
-Ahora mismo el div esta oculto (display: none), para verlo se deberá activar inspeccionando la página.
-Dentro del div se explica el funcionamiento del juego.
-
-  * En este div hay hay un menú con la elección del idioma deseado, implementado con un dropdown.
-    * Español
-    * Català
-    * English
-    Pulsar una de los opciones modificará el idioma en el que las instrucciones son visualizadas.
-  * Botón de Return to game
-  * Botón de About
-  
-ABOUT
------
-  * Página distinta al juego donde se informa sobre la creación y desarrollo del juego, básicamente haciendo
-    referencia a aquellas personas involucradas en el juego.
-  * Sigue habiendo el selector de idioma como el de las instrucciones.
-  * Contiene link que redirecciona al git del proyecto.
-  * Botón de regresar al juego.
+**Este documento, y el proyecto, es susceptible de sufrir modificaciones sin previo aviso**

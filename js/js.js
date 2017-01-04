@@ -47,9 +47,9 @@ function stop(){
 
 function moverNave(){
 	v +=a*dt;
-	document.getElementById("velocidad").innerHTML=v;
+	document.getElementById("velocidad").innerHTML=v.toFixed(2);
 	y +=v*dt;
-	document.getElementById("altura").innerHTML=y;
+	document.getElementById("altura").innerHTML=y.toFixed(2);
 	
 	//mover hasta que top sea un 70% de la pantalla
 	if (y<70){ 
@@ -62,14 +62,16 @@ function motorOn(){
 	a=-g;
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
+	//document.getElementById("naveImg").src = "../img/rocketOn.png";
 }
 function motorOff(){
 	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
+	//document.getElementById("naveImg").src = "../img/rocketOff.png";
 }
 function actualizarFuel(){
 	//Aquí hay que cambiar el valor del marcador de Fuel...
 	fuel-=0.1;
-	document.getElementById("fuel").innerHTML=fuel;	
+	document.getElementById("fuel").innerHTML=fuel.toFixed(2);	
 }

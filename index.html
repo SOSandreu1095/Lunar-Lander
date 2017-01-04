@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title></title>
- <meta name="description" content="">
+
+ <title>LUNAR LANDER</title>
+ <meta name="description" content="Lunar Lander Game created by Andreu Juan Ferra">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
- <link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+ <link rel='stylesheet' media='screen and (min-width: 721px)' href='css/d.css'>
+ <link rel='stylesheet' media='screen and (max-width: 720px)' href='css/m.css'>
  <script src="js/js.js"></script>
+
 </head>
 <body>
  <div id="nave">
- <img src="img/nave.png" alt="img nave">
+    <img id="naveImg" src="img/rocketOff.png" alt="img nave">
  </div>
+ <img id="planeta" src="img/planeta.png" alt="img planeta">
  <div class="a">
- <div id="showm">show menu</div>
- <ul id="cpanel">
-  <li>Velocidad <span id="velocidad">100</span> m/s</li>
-  <li>Fuel <span id="fuel">100</span> l</li>
-  <li>Altura <span id="altura">70</span> m</li>
- </ul>
- </div><div class="b">b</div><div class="c">
- <div id="hidem">hide menu</div>
- <ul id="menu">
-  <li>Jugar</li>
-  <li>Instrucciones</li>
-  <li>Acerca de...</li>
- </ul>
+    <div id="showm">
+        <img src="img/showm.png" alt="img showMenu">
+    </div>
+    <ul id="cpanel">
+        <li id="fuelZone">
+            <p><span id="fuel">100</span> l</p>
+        </li>
+        <li id="speedZone">
+            <p><span id="velocidad">100</span> m/s</p>
+        </li>
+        <li id="heightZone">
+            <p><span id="altura">70</span> m</p>
+        </li>
+    </ul>
  </div>
- <div class="d">d</div>
+ <div class="wrapper">
+    <div class="b"></div><div class="c">
+    <div id="hidem">
+        <img src="img/hidem.png" alt="img hideMenu">
+    </div>
+    <ul id="menu">
+        <li><a href="#"><img src="img/pause.png" alt="Pause Button"></a></li>
+        <li><a href="#"><img src="img/restart.png" alt="Restart Button"></a></li>
+        <li><a href="#"><img src="img/help.png" alt="Help Button"></a></li>
+    </ul>
+    </div>
+ </div>
+ <div class="d">
+     <img id="ground" src="img/ground.png" alt="img ground">
+ </div>
 </body>
 </html>
