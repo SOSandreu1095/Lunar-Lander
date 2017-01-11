@@ -81,3 +81,15 @@ body{
     opacity: 1;
     transform: scale(1.2);
 }
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+}
+/*Ocultar pause y ayuda*/
+#pause, #help {
+    display: none;
+}
+
+#restart img{
+}
