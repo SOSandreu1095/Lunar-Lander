@@ -9,7 +9,7 @@ var fuel=100;
 
 var paused = false;
 var end = false;
-var maxY = 70; //Trayectoria maxima en Y
+var maxY = 67; //Trayectoria maxima en Y
 var mode="medium";
 var hayFuel = true;
 
@@ -32,13 +32,9 @@ window.onload = function(){
 	}
 	
 	//encender/apagar el motor al hacer click en la pantalla
-	document.onclick = function () {
- 	  if (a==g){
-  		motorOn();
- 	  } else {
-  		motorOff();
- 	  }
-	}
+	document.onmousedown = motorOn;
+	document.onmouseup = motorOff;
+	
 	//encender/apagar al apretar/soltar una tecla
 	document.onkeydown = motorOn;
 	document.onkeyup = motorOff;
@@ -156,6 +152,8 @@ function restart(){
 	v = 0;
 	a = -g;
 	fuel = 100;
+	document.getElementById("fuel").innerHTML=fuel.toFixed(2);
+	hayFuel = true;
 	end = false;
 	document.getElementById("naveImg").src = "img/rocketOff.png";
 	stop();

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Digital Play St.ttf");
+}
+
 body,html{
     height:100%;padding:0px;margin:0px;
 }
@@ -15,10 +20,9 @@ body{
 
 .a{
     width:100%;
-    height:90px;
-    overflow:hidden;
     position:fixed;
-    top:0px
+    bottom: 1%;
+    z-index: 1;
 }
 .b{
     background-color:red;
@@ -38,10 +42,11 @@ body{
 }
 
 .d {
-    height:12%;
+    height:15%;
     width:100%;                     
     position:fixed;
     bottom:0px;
+    z-index: -1;
 }
 
 #ground {
@@ -54,13 +59,14 @@ body{
     position:fixed;
     top:10%;
     width:100%;
-    height:20%
+    height:20%;
+    z-index: 1;
 }
 
 #planeta{
     position: fixed;
     height: 60%;
-    left: 50%;
+    left: 35%;
     z-index: -10;
 }
 
@@ -86,10 +92,105 @@ body{
     list-style-type: none;
     padding: 0;
 }
-/*Ocultar pause y ayuda*/
-#pause, #help {
+
+/*Panel Control*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cpanel li {
+    float: left;
+    width: 30%;
+    line-height: 150%;
+    background-size: 100% 100%;
+}
+
+#cpanel #fuelZone {
+    margin-left: 2.5%;
+    background-image: url("../img/fuel.png");
+}
+
+#cpanel #speedZone {
+    margin-left: 2.5%;
+    background-image: url("../img/speed.png");
+}
+
+#cpanel #heightZone {
+    float: right;
+    margin-right: 2.5%;
+    background-image: url("../img/height.png");
+}
+
+#cpanel li p {
+    font-family: myFont;
+    color: white;
+    font-size: 2.5vw;
+    margin-left: 38%;
+}
+
+#menu img {
+    width: 20%;
+    padding: 15%;
+    opacity: 0.6;
+}
+
+#menu img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/*Menu*/
+
+#mode{
     display: none;
 }
 
-#restart img{
+ul{
+    list-style-type: none;
+}
+
+#helpDiv {
+    width: 90%;
+    height: 90%;
+    background: blue;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: block !important;
+    border-style: solid;
+    border-color: white;
+    font-family: myFont;
+    background: #C00D0D;
+}
+
+.dropdownContent li{
+    background: #810909;
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    color: white;
+    line-height: 200%;
+}
+
+p {
+    z-index: 4;
+    font-size: 0.75em;
+    padding-left: 5%;
+    color: white;
+}
+
+li .active{
+    background: #E30B32;
+}
+
+.dropdownContent li:hover{
+    color: yellow;
+    background: #AF0808;
+}
+
+
+/*Ocultar pause y ayuda*/
+#pause, #help {
+    display: none;
 }

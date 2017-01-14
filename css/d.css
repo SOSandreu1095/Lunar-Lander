@@ -54,7 +54,7 @@ body {
 }
 
 .d {
-    height:12%;
+    height:15%;
     width:100%;
     position:fixed;
     bottom:0px;
@@ -151,7 +151,7 @@ ul {
     border-style: solid;
     border-color: white;
     font-family: myFont;
-    position: absolute;
+    position: fixed;
     background: #C00D0D;
     top: 10%;
     left: 10%;
