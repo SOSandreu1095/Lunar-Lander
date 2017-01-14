@@ -91,6 +91,7 @@ body{
 #menu {
     list-style-type: none;
     padding: 0;
+    z-index: 66;
 }
 
 /*Panel Control*/
@@ -187,6 +188,16 @@ li .active{
 .dropdownContent li:hover{
     color: yellow;
     background: #AF0808;
+}
+
+#return{
+    display: none;
+}
+
+#restart{
+    position: absolute;
+    display: block;
+    z-index: 5;
 }
 
 
