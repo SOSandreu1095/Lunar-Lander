@@ -21,8 +21,9 @@ window.onload = function(){
 	document.getElementById("medium").style.background = "#E30B32";
 	
 	//mostrar menú móvil
-    	document.getElementById("showm").onclick = function () {
+    document.getElementById("showm").onclick = function () {
 		document.getElementsByClassName("c")[0].style.display = "block";
+		document.getElementById("msgText").style.display = "none";
 		stop();
 	}
 	//ocultar menú móvil
@@ -43,18 +44,23 @@ window.onload = function(){
 	document.getElementById("pause").onclick = function (){
 		if (paused){
 			start();
+			document.getElementById("msgText").style.display = "none";
 		} else {
 			stop();
+			document.getElementById("msgText").innerHTML = "PAUSED";
+			document.getElementById("msgText").style.display = "block";
 		}
 	}
 
 	document.getElementById("restart").onclick = function (){
 		document.getElementsByClassName("c")[0].style.display = "none";
+		document.getElementById("msgText").style.display = "none";
 		restart();
 	}
 
 	document.getElementById("help").onclick = function (){
 		stop();
+		document.getElementById("msgText").style.display = "none";
 		visualizarInstrucciones();
 	}
 
@@ -156,6 +162,7 @@ function restart(){
 	hayFuel = true;
 	end = false;
 	document.getElementById("naveImg").src = "img/rocketOff.png";
+	document.getElementById("msgText").style.display = "none";
 	stop();
 	start();
 }
@@ -185,7 +192,8 @@ function checkColision(){
 		if (v > maxV) {
 			document.getElementById("naveImg").src="img/firegif.gif"; 
 		} else {
-			//alert("Congratulations");
+			document.getElementById("msgText").innerHTML = "CONGRATULATIONS";
+			document.getElementById("msgText").style.display = "block";
 		}
 	}
 }
