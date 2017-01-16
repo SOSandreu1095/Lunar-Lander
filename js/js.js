@@ -177,7 +177,7 @@ function ocultarInstrucciones(){
 
 function checkColision(){
 	if (y < 0){ //Techo
-		document.getElementById("naveImg").src="img/firegif.gif";
+		document.getElementById("naveImg").src="img/rocketFire.gif";
 		document.getElementById("altura").innerHTML=70.0.toFixed(2);
 	} else { //Suelo
 		document.getElementById("altura").innerHTML=0.00.toFixed(2);
@@ -190,7 +190,7 @@ function checkColision(){
 			case "hard": maxV = 1;
 		}
 		if (v > maxV) {
-			document.getElementById("naveImg").src="img/firegif.gif"; 
+			document.getElementById("naveImg").src="img/rocketFire.gif"; 
 		} else {
 			document.getElementById("msgText").innerHTML = "CONGRATULATIONS";
 			document.getElementById("msgText").style.display = "block";
