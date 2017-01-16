@@ -21,7 +21,7 @@ body{
 .a{
     width:100%;
     position:fixed;
-    bottom: 1%;
+    bottom: 2.5%;
     z-index: 1;
 }
 .b{
@@ -30,7 +30,7 @@ body{
     height:100%;
     overflow:hidden;
 }
-.c{
+.c{ /*Background c*/
     background: rgba(97,0,0,1);
     background: -moz-linear-gradient(top, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(97,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
@@ -39,7 +39,9 @@ body{
     background: -ms-linear-gradient(top, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
     background: linear-gradient(to bottom, rgba(97,0,0,1) 0%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#610000', endColorstr='#000000', GradientType=0 );
+}
 
+.c{
     position:fixed;
     top:0px;
     bottom:0px;

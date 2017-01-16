@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-
- <title>LUNAR LANDER</title>
- <meta name="description" content="Lunar Lander Game created by Andreu Juan Ferra">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel='stylesheet' media='screen and (min-width: 721px)' href='css/d.css'>
- <link rel='stylesheet' media='screen and (max-width: 720px)' href='css/m.css'>
- <script src="js/js.js"></script>
-
+    <title>LUNAR LANDER</title>
+    <meta name="description" content="Lunar Lander Game created by Andreu Juan Ferra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' media='screen and (min-width: 700px)' href='css/d.css'>
+    <link rel='stylesheet' media='screen and (max-width: 699px)' href='css/m.css'>
+    <script src="js/js.js"></script>
 </head>
 <body>
- <div id="nave">
-    <img id="naveImg" src="img/rocketOff.png" alt="img nave">
- </div>
- <img id="planeta" src="img/planeta.png" alt="img planeta">
- <p id="msgText"></p>
- <div class="a">
-    <div id="showm">
-        <img src="img/showm.png" alt="img showMenu">
+    <div id="nave">
+        <img id="naveImg" src="img/rocketOff.png" alt="img nave">
     </div>
-    <ul id="cpanel">
-        <li id="fuelZone">
-            <p><span id="fuel">100.00</span> l</p>
-        </li>
-        <li id="speedZone">
-            <p><span id="velocidad">100</span> m/s</p>
-        </li>
-        <li id="heightZone">
-            <p><span id="altura">70</span> m</p>
-        </li>
-    </ul>
- </div>
- <div class="wrapper">
+    <img id="planeta" src="img/planeta.png" alt="img planeta">
+    <p id="msgText"></p>
+    <div class="a">
+        <div id="showm">
+            <img src="img/showm.png" alt="img showMenu">
+        </div>
+        <ul id="cpanel">
+            <li id="fuelZone">
+                <p><span id="fuel">100.00</span> l</p>
+            </li>
+            <li id="speedZone">
+                <p><span id="velocidad">100</span> m/s</p>
+            </li>
+            <li id="heightZone">
+                <p><span id="altura">70</span> m</p>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
     <div class="b"></div><div class="c">
-    <div id="hidem">
-        <img src="img/hidem.png" alt="img hideMenu">
-    </div>
-    <div id="helpDiv">
-    <ul class="listHead">
-        <li class="dropdown"><span id="mode">MODE</span>
-            <ul class="dropdownContent">
-                <li id="easy">EASY</li>
-                <li id="medium">MEDIUM</li>
-                <li id="hard">HARD</li>
-            </ul>
-        </li>
-        <li id="return">RETURN</li>
-        <li id="about"><a href="about.html">ABOUT</a></li>
-    </ul>
+        <div id="hidem">
+            <img src="img/hidem.png" alt="img hideMenu">
+        </div>
+        <div id="helpDiv">
+        <ul class="listHead">
+            <li class="dropdown"><span id="mode">MODE</span>
+                <ul class="dropdownContent">
+                    <li id="easy">EASY</li>
+                    <li id="medium">MEDIUM</li>
+                    <li id="hard">HARD</li>
+                </ul>
+            </li>
+            <li id="return">RETURN</li>
+            <li id="about"><a href="about.html" target="_blank">ABOUT</a></li>
+        </ul>
         <p id="instructions">
             <br><br>
             <span>HOW TO PLAY?</span>
             <br><br> The objective is to land the rocket in a suitable speed, avoiding the crash
-            <br>WARNING</span>: The rocket's fuel is limited
+            <br>WARNING: The rocket's fuel is limited
             <span><br><br><br> EASY MODE --></span> Maximum speed 5 km/h
             <span><br><br> MEDIUM MODE --></span> Maximum speed 3 km/h
             <span><br><br> HARD MODE --></span> Maximum speed 1 km/h
-            <br><br><br><br> <span>CONTROLS</span>
+            <br><br><br> <span>CONTROLS</span>
             <br><br>Press space or press the screen to activate the propulsion
         </p>
     </div>
@@ -67,10 +65,9 @@
             <li id="help"><img src="img/help.png" alt="Help Button"></li>
         </ul>
     </div>
- </div>
- <div class="d">
-     <img id="ground" src="img/ground.png" alt="img ground">
- </div>
-
+    </div>
+    <div class="d">
+        <img id="ground" src="img/ground.png" alt="img ground">
+    </div>
 </body>
 </html>

@@ -93,11 +93,16 @@ ul {
     overflow: hidden;
 }
 
+#menu {
+    z-index: 5;
+    position: fixed;
+}
 
 #menu li {
     text-align: center;
     float: left;
-    width: 33.33%;
+    display: block;
+    width: 33.33%; 
 }
 
 #menu img {
