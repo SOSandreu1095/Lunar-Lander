@@ -219,6 +219,12 @@ p {
     color: white;
 }
 
+#instructions .t {
+    margin-left: 7.5%;
+    font-size: 1.4em;;
+    color: greenyellow;
+}
+
 li .active{
     background: #E30B32;
 }

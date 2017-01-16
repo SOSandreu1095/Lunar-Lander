@@ -176,6 +176,7 @@ ul{
     color: yellow;
 }
 
+
 .dropdownContent li{
     background: #810909;
     text-align: center;
@@ -191,6 +192,13 @@ p {
     font-size: 0.70em;
     padding-left: 5%;
     color: white;
+}
+
+
+#instructions .t {
+    margin-left: 10%;
+    font-size: 1.4em;;
+    color: greenyellow;
 }
 
 li .active{
@@ -235,7 +243,6 @@ a {text-decoration: none; color: white;}
     top: 10%;
     width: 80%;
     line-height: 300%;
-    background: greenyellow;
     left: 7.5%;
     text-align: center;
     font-weight: bold;
