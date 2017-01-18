@@ -8,6 +8,8 @@ var timerFuel = null;
 var fuel = 100;
 
 /*Mis nuevas variables*/
+var audio;
+var soundEnabled = true; 
 var instDisplayed = false;
 var paused = false;
 var end = false;
@@ -31,6 +33,10 @@ window.onload = function () {
 	document.getElementById("hidem").onclick = function () {
 		ocultarInstrucciones();
 		start();
+	}
+
+	document.getElementById("sound").onclick = function(){
+		changeSound();
 	}
 
 	//encender/apagar el motor al hacer click en la pantalla
@@ -133,6 +139,7 @@ function moverNave() {
 }
 function motorOn() {
 	if ((hayFuel) && (!paused) && (!end)) {
+		playAudio("sounds/propulsion.mp3");
 		a = -g;
 		if (timerFuel == null) {
 			timerFuel = setInterval(function () { actualizarFuel(); }, 10);
@@ -194,13 +201,15 @@ function checkColision() {
 	if (y < 0) { //Techo
 		document.getElementById("naveImg").src = "img/rftop.gif";
 		document.getElementById("altura").innerHTML = 70.0.toFixed(2);
+		playAudio("sounds/explosion.mp3");
 	} else { //Suelo
 		document.getElementById("altura").innerHTML = 0.00.toFixed(2);
 		if (v > getSpeedMode()) {
 			document.getElementById("naveImg").src = "img/rfbot.gif";
+			playAudio("sounds/explosion.mp3");
 		} else {
-			document.getElementById("msgText").innerHTML = "CONGRATULATIONS";
-			document.getElementById("msgText").style.display = "block";
+			score();
+			playAudio("sounds/win.mp3");
 		}
 	}
 	stop();
@@ -226,6 +235,9 @@ function checkKey() {
 				stop();
 				visualizarInstrucciones();
 			}
+			break;
+		case 77: //M --> Mute
+			changeSound();
 			break;
 		case 32: //SPACE --> motorOn
 			motorOn();
@@ -291,4 +303,38 @@ function changeColor(colorA, colorB, colorC) {
 	document.getElementById("easy").style.background = colorA;
 	document.getElementById("medium").style.background = colorB;
 	document.getElementById("hard").style.background = colorC;
+}
+
+//Mute & unmute
+function changeSound(){
+	if (soundEnabled){
+			document.getElementById("sound").src = "img/soundOFF.png";
+		} else {
+			document.getElementById("sound").src = "img/soundON.png";
+		}
+	soundEnabled = !soundEnabled; //Invertimos
+}
+
+//Play Audio
+function playAudio(pathAudio){
+	if (soundEnabled){
+		audio = new Audio(pathAudio);
+		audio.play();
+	}
+}
+
+function score(){
+	var sc = (fuel *  (10-v));
+	
+	switch (mode) {
+		case "easy": sc = sc*1;
+			break;
+		case "medium": sc = sc*1.1;
+			break;
+		case "hard": sc = sc*1.2;
+	}
+	sc = sc.toFixed(0);
+
+	document.getElementById("msgText").innerHTML = "SCORE: "+sc;
+	document.getElementById("msgText").style.display = "block";
 }
