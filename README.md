@@ -1,5 +1,5 @@
 # LUNAR LANDER - JAVASCRIPT (Andreu Juan Ferrá)
-Versión del juego Lunar Landing realizada por Andreu Juan Ferrá, 
+Versión del juego Lunar Landing realizada por Andreu Juan Ferrá, incluye:
 
 * HTML
   * index.html: Indice donde se encuentran los elementos del juego
