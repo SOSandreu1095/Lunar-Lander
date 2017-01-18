@@ -9,6 +9,7 @@ Versión del juego Lunar Landing realizada por Andreu Juan Ferrá, incluye:
   * c.css: Css encargado de colocar los elementos en una posición adecuada para una pantalla en modo vertical
     * _Pasar de un css a otro lo hara mediante media query dependiendo del tamaño de la pantalla_
   * ab.css: Se encarga de la visualización de los elementos del about
+   * _Observaciones: El css no valida, ya que el degradado no me lo detecta correctamente, sin embargo debo dejar ese código para que el degradado salga correctamente_ 
 * JS
   * js.js: Javascript donde estan las funciones necesarias para el buen funcionamiento del juego
 * FONTS
