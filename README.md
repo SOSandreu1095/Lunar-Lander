@@ -31,7 +31,7 @@ Previsualización: https://rawgit.com/SOSandreu1095/Lunar-Lander/master/index.ht
 
 Tareas obligatorias a desarrollar:
 ---------------------------------
-* Poner fondo, imagen de la nave y luna. Poner una tierra fijada a la pantalla para que se vea en cualquier tipo de dispositivo. Optimizar las imágenes. Recuerda que se pueden cargar diferentes tamaños y formas de fondos en función del dispositivo usando css.
+* Imagen como degradado de fondo, imagen de la nave y luna. Tierra fijada a la pantalla para que se vea en cualquier tipo de dispositivo. Imágenes optimizadas.
 * Crear el menú: 
   * Menu pantalla horizontal: Se encuentra en la parte superior derecha de la pantalla, y deplegará unas instrucciones si se desea
   * Menu pantalla vertical: Para visualizarlo se deberá pulsar la parte superior derecha de la pantalla, ocupa el 100% de la pantalla
@@ -44,7 +44,7 @@ Tareas obligatorias a desarrollar:
 
 Funcionalidades adicionales implementadas:
 -----------------------------------------
-* SONIDO: Hay unos sonidos en el juego que pueden ser muteados si se desean desde el botón correspondiente
+* SONIDO: Hay unos sonidos en el juego que pueden ser muteados si se desea desde el botón correspondiente
   * En caso de victoria
   * En caso de explosión de la nave
   * Al encender el motor
@@ -52,7 +52,7 @@ Funcionalidades adicionales implementadas:
   * Easy: La velocidad de impacto tiene que ser menor o igual a 5m/s
   * Medium: La velocidad de impacto tiene que ser menor o igual a 3m/s
   * Hard: La velocidad de impacto tiene que ser menor o igual a 1m/s
-* EXPLOSIÓN: En ambas partes de las pantallas
+* EXPLOSIÓN: En ambas partes de las pantallas (Superior e inferior)
   * En caso de que la nave toque la parte superior de la pantalla, la nave explotará por la parte superior
   * En caso de que la nave aterrize a una velocidad demasiado elevada, explotará desde abajo
 * PAUSE / PLAY
